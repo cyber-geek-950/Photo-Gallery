@@ -2,56 +2,66 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Photo Gallery</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Photo Gallery</title>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="js/lightbox/css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
     <section id="wrapper">
       <div class="container">
-        <form id="searchbox" action="">
-          <input id="search" type="text" name="search">
+        <form role="search">
+          <label for="site-search"></label>
+          <input type="search" id="mySearch" placeholder="Search(16pt)">
         </form>
-        <div class="gallery">
-          <div class="item-1 item">
-            <img src="photos/thumbnails/01.jpg" class="responsive-image" alt="">
-          </div>
-          <div class="item-2 item">
-            <img src="photos/thumbnails/02.jpg" class="responsive-image" alt="">
-          </div>
-          <div class="item-3 item">
-            <img src="photos/thumbnails/03.jpg" class="responsive-image" alt="">
-          </div>
-          <div class="item-4 item">
-            <img src="photos/thumbnails/04.jpg" class="responsive-image" alt="">
-          </div>
-          <div class="item-5 item">
-            <img src="photos/thumbnails/05.jpg" class="responsive-image" alt="">
-          </div>
-          <div class="item-6 item">
-            <img src="photos/thumbnails/06.jpg" class="responsive-image" alt="">
-          </div>
-          <div class="item-7 item">
-            <img src="photos/thumbnails/07.jpg" class="responsive-image" alt="">
-          </div>
-          <div class="item-8 item">
-            <img src="photos/thumbnails/08.jpg" class="responsive-image" alt="">
-          </div>
-          <div class="item-9 item">
-            <img src="photos/thumbnails/09.jpg" class="responsive-image" alt="">
-          </div>
-          <div class="item-10 item">
-            <img src="photos/thumbnails/10.jpg" class="responsive-image" alt="">
-          </div>
-          <div class="item-11 item">
-            <img src="photos/thumbnails/11.jpg" class="responsive-image" alt="">
-          </div>
-          <div class="item-12 item">
-            <img src="photos/thumbnails/12.jpg" class="responsive-image" alt="">
-          </div>
-        </div>
-      </div><!-- END GALLERY -->
+        <ul class="gallery">
+          <li class="item">
+            <a data-title="I love hay bales. Took this snap on a drive through the countryside past some straw fields." href="images/01.jpg" data-lightbox="image-set" data-alt="Hay Bales"><img src="images/thumbnails/01.jpg" class="responsive-image" alt=""></a>
+          </li>
+          <li class="item">
+            <a data-title="The lake was so calm today. We had a great view of the snow on the mountains from here." href="images/02.jpg" data-lightbox="image-set" data-alt="Lake"><img src="images/thumbnails/02.jpg" class="responsive-image" alt=""></a>
+          </li>
+          <li class="item">
+            <a data-title="I hiked to the top of the mountain and got this picture of the canyon and trees below." href="images/03.jpg" data-lightbox="image-set" data-alt="Canyon"><img src="images/thumbnails/03.jpg" class="responsive-image" alt=""></a>
+          </li>
+          <li class="item">
+            <a data-title="It was amazing to see an iceberg up close, it was so cold but didn’t snow today." href="images/04.jpg" data-lightbox="image-set" data-alt="Iceberg"><img src="images/thumbnails/04.jpg" class="responsive-image" alt=""></a>
+          </li>
+          <li class="item">
+            <a data-title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons." href="images/05.jpg" data-lightbox="image-set" data-alt="Desert"><img src="images/thumbnails/05.jpg" class="responsive-image" alt=""></a>
+          </li>
+          <li class="item">
+            <a data-title="Fall is coming, I love when the leaves on the trees start to change color." href="images/06.jpg" data-lightbox="image-set" data-alt="Fall"><img src="images/thumbnails/06.jpg" class="responsive-image" alt=""></a>
+          </li>
+          <li class="item">
+            <a data-title="I drove past this plantation yesterday, everything is so green!" href="images/07.jpg" data-lightbox="image-set" data-alt="Plantation"><img src="images/thumbnails/07.jpg" class="responsive-image" alt=""></a>
+          </li>
+          <li class="item">
+            <a data-title="My summer vacation to the Oregon Coast. I love the sandy dunes!" href="images/08.jpg" data-lightbox="image-set" data-alt="Dunes"><img src="images/thumbnails/08.jpg" class="responsive-image" alt=""></a>
+          </li>
+          <li class="item">
+            <a data-title="We enjoyed a quiet stroll down this countryside lane." href="images/09.jpg" data-alt="Countryside Lane"><img src="images/thumbnails/09.jpg" class="responsive-image" alt=""></a>
+          </li>
+          <li class="item">
+            <a data-title="Sunset at the coast! The sky turned a lovely shade of orange." href="images/10.jpg" data-lightbox="image-set" data-alt="Sunset"><img src="images/thumbnails/10.jpg" class="responsive-image" alt=""></a>
+          </li>
+          <li class="item">
+            <a data-title="I did a tour of a cave today and the view of the landscape below was breathtaking." href="images/11.jpg" data-lightbox="image-set" data-alt="Cave"><img src="images/thumbnails/11.jpg" class="responsive-image" alt=""></a>
+          </li>
+          <li class="item">
+            <a data-title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in." href="images/01.jpg" data-lightbox="image-set" data-alt="Bluebells"><img src="images/thumbnails/12.jpg" class="responsive-image" alt=""></a>
+          </li>
+        </ul><!-- END CONTAINER -->
+      </div><!-- END CONTAINER -->
     </section>
+
+    <script
+    src="http://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+  <script scr="js/app.js"></script>
+
   </body>
 </html>
