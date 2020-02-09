@@ -1,11 +1,11 @@
 // HANDLE IMAGE FILTERING
 const search = document.querySelector('#mySearch');
-const thumbnail = document.querySelectorAll('.item a');
+const thumbnail = document.querySelectorAll('thumbnail');
 
 const handleSearch = event => {
     const searchTerm = event.target.value.toLowerCase();
 
-    .item.forEach(imageSearch => {
+    thumbnail.forEach(imageSearch => {
         const text = imageSearch.getAttribute('data-title').toLowerCase();
         const box = imageSearch.parentElement;
 
